@@ -1,6 +1,6 @@
 <?php
 
-	Class extension_admin_css_override extends Extension{
+	Class extension_backend_assets extends Extension{
 
 		public function getSubscribedDelegates(){
 			return array(
@@ -27,7 +27,7 @@
 			// Scripts
 			$scripts = URL . '/workspace/backend-assets/js/backend.js';
 			if(file_exists($styles)) {
-				Administration::instance()->Page->addScriptToHead($scripts', 1001);
+				Administration::instance()->Page->addScriptToHead($scripts, 1001);
 			}
 		}
 
