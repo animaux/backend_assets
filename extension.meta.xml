@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<extension id="admin_css_override" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
-	<name>Admin CSS Override</name>
-	<description>This extension allows to override Symphony's Admin CSS styles by additional CSS rules. It simply appends a custom stylesheet to the head of admin pages.</description>
-	<repo type="github">https://github.com/michael-e/admin_css_override</repo>
-	<url type="discuss">http://symphony-cms.com/discuss/thread/22296/</url>
+<extension id="backend_assets" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Backend Assets</name>
+	<description>Add custom backend assets.</description>
+	<repo type="github">https://github.com/hananils/backend_assets</repo>
 	<types>
 		<type>Interface</type>
 	</types>
@@ -12,8 +11,17 @@
 			<name github="michael-e" symphony="michael-e">Michael Eichelsdoerfer</name>
 			<website>http://www.michael-eichelsdoerfer.de</website>
 		</author>
+		<author>
+			<name github="hananils" symphony="hananils">Büro für Web- und Textgestaltung</name>
+			<website>http://hananils.de</website>
+		</author>
 	</authors>
 	<releases>
+		<release version="2.0" date="2014-03-03" min="2.3">
+			- Moved asset location to the workspace
+			- Added script assets
+			- Renamed extension
+		</release>
 		<release version="1.4" date="2012-10-05" min="2.3">
 			<![CDATA[- Updated for Symphony 2.3]]>
 		</release>
