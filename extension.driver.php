@@ -19,15 +19,15 @@
 		public function appendAssets() {
 			
 			// Styles
-			$styles = URL . '/workspace/backend-assets/css/backend.css';
-			if(file_exists($styles)) {
-				Administration::instance()->Page->addStylesheetToHead($styles, 'screen', 1000, false);
+			$styles = '/workspace/backend-assets/css/backend.css';
+			if(file_exists(DOCROOT . $styles)) {
+				Administration::instance()->Page->addStylesheetToHead(URL . $styles, 'screen', 1000, false);
 			}
 			
 			// Scripts
-			$scripts = URL . '/workspace/backend-assets/js/backend.js';
-			if(file_exists($styles)) {
-				Administration::instance()->Page->addScriptToHead($scripts, 1001);
+			$scripts = '/workspace/backend-assets/js/backend.js';
+			if(file_exists(DOCROOT . $scripts)) {
+				Administration::instance()->Page->addScriptToHead(URL . $scripts, 1001);
 			}
 		}
 
