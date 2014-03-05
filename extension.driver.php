@@ -17,7 +17,18 @@
 	-------------------------------------------------------------------------*/
 
 		public function appendAssets() {
-			Administration::instance()->Page->addStylesheetToHead(URL . '/extensions/admin_css_override/assets/admin_css_override.css', 'screen', 1000, false);
+			
+			// Styles
+			$styles = URL . '/workspace/assets-backend/css/backend.css';
+			if(file_exists($styles)) {
+				Administration::instance()->Page->addStylesheetToHead($styles, 'screen', 1000, false);
+			}
+			
+			// Scripts
+			$scripts = URL . '/workspace/assets-backend/js/backend.js';
+			if(file_exists($styles)) {
+				Administration::instance()->Page->addScriptToHead($scripts', 1001);
+			}
 		}
 
 	}
