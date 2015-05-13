@@ -17,6 +17,9 @@
 		</author>
 	</authors>
 	<releases>
+	  <release version="2.0.1" date="2015-05-13" min="2.3">
+			- Simplified asset paths/names
+		</release>
 		<release version="2.0" date="2014-03-03" min="2.3">
 			- Moved asset location to the workspace
 			- Added script assets

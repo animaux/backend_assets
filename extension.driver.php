@@ -19,13 +19,13 @@
 		public function appendAssets() {
 			
 			// Styles
-			$styles = '/workspace/backend-assets/css/backend.css';
+			$styles = '/workspace/backend-assets/custom.css';
 			if(file_exists(DOCROOT . $styles)) {
 				Administration::instance()->Page->addStylesheetToHead(URL . $styles, 'screen', 1000, false);
 			}
 			
 			// Scripts
-			$scripts = '/workspace/backend-assets/js/backend.js';
+			$scripts = '/workspace/backend-assets/custom.js';
 			if(file_exists(DOCROOT . $scripts)) {
 				Administration::instance()->Page->addScriptToHead(URL . $scripts, 1001);
 			}
