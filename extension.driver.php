@@ -21,13 +21,13 @@
 			// Styles
 			$styles = '/workspace/backend-assets/custom.css';
 			if(file_exists(DOCROOT . $styles)) {
-				Administration::instance()->Page->addStylesheetToHead(URL . $styles, 'screen', 1000, false);
+				Administration::instance()->Page->addStylesheetToHead(URL . $styles . '?v=' . date('YmdHi', filemtime(DOCROOT . $styles)), 'screen', 1000, false);
 			}
 			
 			// Scripts
 			$scripts = '/workspace/backend-assets/custom.js';
 			if(file_exists(DOCROOT . $scripts)) {
-				Administration::instance()->Page->addScriptToHead(URL . $scripts, 1001);
+				Administration::instance()->Page->addScriptToHead(URL . $scripts . '?v=' . date('YmdHi', filemtime(DOCROOT . $scripts)), 1001);
 			}
 		}
 
